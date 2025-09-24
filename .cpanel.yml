@@ -3,3 +3,20 @@ deployment:
   tasks:
     - export: source: /dist
       target: $HOME/public_html
+      excludes:
+        - .git/
+        - node_modules/
+    - export: source: /
+      target: $HOME/public_html
+      excludes:
+        - .git/
+        - node_modules/
+        - src/
+        - .bolt/
+        - .vscode/
+        - *.bat
+        - *.ps1
+        - *.py
+        - *.md
+        - dist.zip
+        - .github/
