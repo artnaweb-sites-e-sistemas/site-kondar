@@ -3,26 +3,3 @@ deployment:
   tasks:
     - export: source: /dist
       target: $HOME/public_html
-      excludes:
-        - .git/
-        - node_modules/
-    - export: source: /
-      target: $HOME/public_html
-      excludes:
-        - .git/
-        - node_modules/
-        - .gitignore
-        - README.md
-        - README-AMBIENTE.md
-        - GUIA-HOSPEDAGEM.md
-        - preparar-hospedagem.bat
-        - build-completo.bat
-        - build-e-deploy.bat
-        - build-e-deploy.ps1
-        - *.bat
-        - *.ps1
-        - *.py
-        - .bolt/
-        - .vscode/
-        - dist.zip
-        - src/
