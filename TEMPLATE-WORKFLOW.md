@@ -1,3 +1,8 @@
+# Template: deploy-cpanel.yml
+
+Copie este código e salve como: `.github/workflows/deploy-cpanel.yml`
+
+```yaml
 name: Deploy to cPanel
 
 on:
@@ -37,4 +42,23 @@ jobs:
           **/.git*/**
           **/node_modules/**
           **/.env
-        delete-orphaned-files: true
+```
+
+## 🔧 Personalizações
+
+### **Para projetos sem Node.js:**
+Remova as seções:
+- `Setup Node.js`
+- `Install dependencies` 
+- `Build`
+
+### **Para outros diretórios de build:**
+Altere `local-dir: ./dist/` para:
+- `./build/` (React)
+- `./out/` (Next.js)
+- `./public/` (Vue)
+
+### **Para subdiretórios no cPanel:**
+Altere `server-dir: ./public_html/` para:
+- `./public_html/subpasta/`
+- `./public_html/projeto/`
