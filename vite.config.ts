@@ -13,6 +13,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         ssrh: resolve(__dirname, 'ssrh.html'),
+        parceiros: resolve(__dirname, 'parceiros.html'),
       },
     },
   },
