@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html, #root {
+  overflow-x: hidden;
+}
+
+.bg-accent {
+    --tw-bg-opacity: 1;
+    background-color: rgb(4 211 97 / var(--tw-bg-opacity));
+}
